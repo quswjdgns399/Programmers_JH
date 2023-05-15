@@ -1,5 +1,3 @@
-
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -24,9 +22,13 @@ public class Main {
                 return Integer.parseInt(e1[0]) - Integer.parseInt(e2[0]);
         });
 
-        for(int i=0; i<num; i++){
-            System.out.println(arr[i][0] + " " + arr[i][1]);
-        }
+       StringBuilder sb = new StringBuilder();
+       for(int i=0; i<num; i++){
+           sb.append(arr[i][0]).append(" ");
+           sb.append(arr[i][1]).append('\n');
+       }
+
+        System.out.println(sb);
 
     }
 }
